@@ -25,7 +25,7 @@ quarto render index.qmd
 quarto preview index.qmd
 ```
 
-The rendered site is written to `docs/`, which can be used for GitHub Pages.
+The rendered site is written to `_site/` for deployment by GitHub Actions.
 
 ## Main Files
 
@@ -34,6 +34,10 @@ The rendered site is written to `docs/`, which can be used for GitHub Pages.
 - `styles.css`: reusable HI theme styles
 - `_quarto.yml`: project-level Quarto settings
 - `img/`: place reusable background images and figures here
+
+## GitHub Pages
+
+This project is set up to publish from the repository root rather than `docs/`. That means GitHub Pages should be configured to deploy from the root of your main branch, and the rendered site can reference `img/` directly.
 
 ## Included Patterns
 

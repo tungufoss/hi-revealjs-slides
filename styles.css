@@ -195,6 +195,24 @@
   margin-right: 0.2em;
 }
 
+.dark-slide,
+.dark-slide p,
+.dark-slide li,
+.dark-slide blockquote,
+.dark-slide a,
+.dark-slide code,
+.dark-slide strong,
+.dark-slide h1,
+.dark-slide h2,
+.dark-slide h3,
+.dark-slide .big-number {
+  color: white;
+}
+
+.dark-slide h2 {
+  border-bottom-color: white;
+}
+
 /* ── Components ─────────────────────────────────────────────────── */
 
 .callout {

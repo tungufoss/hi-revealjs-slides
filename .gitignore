@@ -3,7 +3,10 @@
 **/*.quarto_ipynb
 
 # Rendered site/build output
+/_site/
+/docs/
 /index.html
+/search.json
 /index_files/
 /site_libs/
 

@@ -1,0 +1,26 @@
+# Ignore Quarto files
+/.quarto/
+**/*.quarto_ipynb
+
+# Rendered site/build output
+/index.html
+/index_files/
+/site_libs/
+
+# R session and project files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Common editor/OS clutter
+.vscode/
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+
+# Local reference material
+tmp/
+

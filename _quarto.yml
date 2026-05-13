@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "HI RevealJS Slides Template"
+
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    show-slide-number: all
+    controls: true
+    progress: true
+    incremental: false
+    transition: fade
+    background-transition: fade
+    css: styles.css
+    width: 1600
+    height: 900
+    center: false
+
+execute:
+  warning: false
+  message: false

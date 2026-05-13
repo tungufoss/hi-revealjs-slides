@@ -3,6 +3,7 @@ title: "Presentation Title"
 subtitle: "Short subtitle or event name"
 author: "Helga Ingimundardóttir"
 institute: "University of Iceland"
+title-block-style: none
 presenter:
   name: "Helga Ingimundardóttir"
   position: "Assistant Professor"

@@ -1,14 +1,22 @@
-# {{< meta title >}} {.title-slide}
+# {.title-slide background-image="img/hi/background/v1.jpg" background-size="cover" background-position="center"}
 
-::: {.title-box}
-{{< meta subtitle >}}
+::: {.title-highlight}
+{{< meta event.title >}}
+:::
+
+::: {.subtitle-highlight}
+{{< meta event.subtitle >}}
 
 :::
 
 ::: {.title-meta}
-**{{< meta author >}}**
-{{< meta institute >}}
-{{< meta date >}}
+<a href="https://hi.is/staff/{{< meta presenter.username >}}" target="_blank" rel="noopener noreferrer"><strong>{{< meta presenter.name >}}</strong></a>
+<a href="https://orcid.org/{{< meta presenter.orcid >}}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+<a href="mailto:{{< meta presenter.username >}}@hi.is"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{< meta presenter.username >}}@hi.is</a>
+:::
+
+::: {.event-meta}
+{{< meta event.name >}}: {{< meta event.date >}}
 :::
 
 ## What This Template Shows

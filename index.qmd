@@ -1,8 +1,4 @@
 ---
-title: "Presentation Title"
-subtitle: "Short subtitle or event name"
-author: "Helga Ingimundardóttir"
-institute: "University of Iceland"
 title-block-style: none
 presenter:
   name: "Helga Ingimundardóttir"
@@ -12,7 +8,11 @@ presenter:
   username: "helgaingim"
   github: "tungufoss"
   orcid: "0000-0002-2780-3546"
-date: today
+event:
+  name: "Event name"
+  date: today
+  title: "Presentation Title"
+  subtitle: "Short subtitle"
 format:
   revealjs:
     title-slide: false

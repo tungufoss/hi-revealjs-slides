@@ -4,3 +4,27 @@
        alt="Háskóli Íslands"
        aria-hidden="true" />
 </div>
+<div id="hi-badge" aria-hidden="true" style="display:none">HÍ</div>
+
+<script>
+(function () {
+  function updateBadge(slide) {
+    var badge = document.getElementById("hi-badge");
+    if (!badge) return;
+    badge.style.display =
+      slide && slide.classList.contains("title-slide") ? "flex" : "none";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var attempts = 0;
+    var poll = setInterval(function () {
+      if (typeof Reveal !== "undefined" && Reveal.isReady()) {
+        clearInterval(poll);
+        updateBadge(Reveal.getCurrentSlide());
+        Reveal.on("slidechanged", function (e) { updateBadge(e.currentSlide); });
+      }
+      if (++attempts > 40) clearInterval(poll);
+    }, 100);
+  });
+})();
+</script>

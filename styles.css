@@ -84,6 +84,27 @@
   width: var(--banner-w);
 }
 
+/* "HÍ" badge — blue continuation flush right of the banner */
+#hi-badge {
+  align-items: center;
+  background: var(--color-main);
+  color: white;
+  display: flex;
+  font-family: "Jost", Arial, sans-serif;
+  font-size: calc(var(--banner-w) * 0.62);
+  font-weight: 700;
+  height: var(--banner-w);
+  justify-content: center;
+  left: var(--banner-w);
+  letter-spacing: -0.02em;
+  padding: 0;
+  width: var(--banner-w);
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
 
 /* ── Typography ─────────────────────────────────────────────────── */
 
@@ -121,28 +142,57 @@
 
 /* ── Slide types ────────────────────────────────────────────────── */
 
-.title-slide {
-  background: var(--color-light);
+/* Title slide — full-bleed photo, no padding */
+.reveal .slide.title-slide {
+  padding: 0;
 }
 
-.title-box {
-  background: white;
-  border-left: 8px solid var(--color-accent);
-  margin-top: 1.2em;
-  max-width: 920px;
-  padding: 0.9em 1.1em;
+/* White-highlight inline text for title and subtitle over photo */
+.title-highlight,
+.subtitle-highlight {
+  display: table;
+  margin-left: calc(var(--banner-w) + 40px);
+  margin-top: 1.4em;
 }
 
-.title-box h2 {
-  border-bottom: 0;
-  display: block;
-  margin-bottom: 0.3em;
+.title-highlight {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-main);
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 0.08em 0.3em;
 }
 
-.title-meta {
-  color: #555555;
+.subtitle-highlight {
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--hi-dark);
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 0.3em;
+  padding: 0.1em 0.3em;
+}
+
+/* Presenter / event meta below title */
+.title-meta,
+.event-meta {
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--hi-dark);
+  display: table;
   font-size: 0.72em;
-  margin-top: 1.2em;
+  margin-left: calc(var(--banner-w) + 40px);
+  margin-top: 0.45em;
+  padding: 0.4em 0.7em;
+}
+
+.title-meta a {
+  color: var(--color-main);
+  margin-right: 0.8em;
+  text-decoration: none;
+}
+
+.title-meta a i {
+  margin-right: 0.2em;
 }
 
 /* ── Components ─────────────────────────────────────────────────── */
